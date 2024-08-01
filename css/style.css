@@ -1,0 +1,180 @@
+/* ini css */
+/* navbar start */
+nav {
+    display: flex;
+    background-color: rgb(110, 74, 30);
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+
+.logo-icon {
+    background-image: (assets\revou.png);
+    height: 40px;
+    width: 100%;
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-items {
+    padding: 8px;
+}
+/* navbar end */
+
+.main-title {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content-item {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-content {
+    display: flex;
+}
+
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+input[type="text"],
+select {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px; 
+    border: 1px solid rgb(110, 74, 30); 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+.main-banner-container {
+    height: 150px;
+    width: 100%;
+}
+
+.main-content-banner {
+    width: 100%;
+    height: 250px;
+    display: none; /* default hide */
+}
+
+.main-content-banner:first-child {
+    display: block; /* show the first image */
+}
+
+.banner-1 {
+    background-image: url(../assets/1.jpg);
+}
+.banner-2 {
+    background-image: url(../assets/2.jpg);
+}
+.banner-3 {
+    background-image: url(../assets/3.jpg);
+}
+
+.item-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    background-image: url()
+    border-radius: 50%;
+}
+
+.main-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 350px;
+}
+
+
+
+.text-biodata {
+    font-size: 90%;
+}
+
+button {
+    width: 300px; 
+    height: auto; 
+    background-color: rgb(120, 92, 33); 
+    border: 1px solid rgb(110, 74, 30); 
+    border-radius: 4px; 
+    padding: 10px;
+    margin-top: 15px;
+    color: white; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: rgb(130, 102, 43); 
+}
+
+
+
+/* Menu start */
+.menu {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 250px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu-card {
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-right: 4rem;
+}
+
+.menu-card img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.menu-card-title {
+    margin-top: 1rem auto 0.5rem;
+}
+
+.menu-card-prince {
+    font-size: 1.5rem;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content-item {
+        margin-top: 80px;
+    }
+
+    .main-banner-container {
+        margin-top: -180px;
+    }
+}
